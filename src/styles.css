@@ -1,0 +1,44 @@
+body {
+  background: #090530;
+  font-size: 25px;
+  
+
+}
+
+
+
+/*
+ * Search
+*/
+.search-container {
+  padding: 20px 5px 20px 5px;
+  text-align: center;
+}
+.search-field {
+  width: 30%;
+  height: 30px;
+  line-height: 20px;
+  font-size: 17px;
+  margin-left: 1300px;
+  padding: 2px;
+}
+.search-button {
+  padding: 4px;
+  line-height: 20px;
+  margin-left: 1200px;
+  font-size: 16px; 
+}
+
+label {
+  
+  font-size: 19px;
+  margin-left: 1200px;
+  color: #f0bb58;
+  
+}
+
+
+
+
+
+

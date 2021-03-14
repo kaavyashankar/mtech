@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/icon512.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon192.png" />
+    
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+    
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>K Zone</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .navbar {
+        background-color: rgb(193, 211, 144);
+      }
+      .navbar h3 {
+        display: inline-block;
+        text-align: left;
+        padding: 10px;
+        color: rgb(245, 245, 245);
+        text-decoration: none;
+      }
+      .navbar a {
+        display: inline-block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+      }
+      .page-info {
+        padding: 10px;
+      }
+      .Current {
+        color: #9c7790;
+      }
+      .Completed {
+        color: #ff6347;
+        text-decoration: line-through;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <noscript>.</noscript>
+    <div id="root">
+      
+    </div>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('worker.js').then(function(registration) {
+            console.log('Worker registration successful', registration.scope);
+          }, function(err) {
+            console.log('Worker registration failed', err);
+          }).catch(function(err) {
+            console.log(err);
+          });
+        });
+      } else {
+        console.log('Service Worker is not supported by browser.');
+      }
+    </script>
+  </body>
+
+  
+
+
+  
+  
+  
+
+
+  
+
